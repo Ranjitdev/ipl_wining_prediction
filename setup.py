@@ -1,4 +1,4 @@
-from setuptools import setup,find_packages
+from setuptools import setup, find_packages
 from typing import List
 
 Project_name = 'IPL win chance prediction'
