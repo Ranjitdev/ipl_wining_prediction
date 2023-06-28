@@ -1,0 +1,4 @@
+LogisticRegression,RandomForestClassifier
+[69.23096286972938],[99.99307740717433]
+[68.98504757589488],[99.91693097719377]
+"[{'C': 100, 'penalty': 'l2', 'solver': 'newton-cholesky'}]",[{'criterion': 'entropy'}]

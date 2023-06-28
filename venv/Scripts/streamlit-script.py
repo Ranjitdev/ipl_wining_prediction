@@ -1,10 +1,10 @@
 #!C:\Users\PythonFiles\PYcharm\ipl_prediction\venv\python.exe
-# EASY-INSTALL-ENTRY-SCRIPT: 'streamlit==1.23.1','console_scripts','streamlit'
+# EASY-INSTALL-ENTRY-SCRIPT: 'streamlit==1.24.0','console_scripts','streamlit'
 import re
 import sys
 
 # for compatibility with easy_install; see #2198
-__requires__ = 'streamlit==1.23.1'
+__requires__ = 'streamlit==1.24.0'
 
 try:
     from importlib.metadata import distribution
@@ -30,4 +30,4 @@ globals().setdefault('load_entry_point', importlib_load_entry_point)
 
 if __name__ == '__main__':
     sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
-    sys.exit(load_entry_point('streamlit==1.23.1', 'console_scripts', 'streamlit')())
+    sys.exit(load_entry_point('streamlit==1.24.0', 'console_scripts', 'streamlit')())

@@ -1,0 +1,10 @@
+[2023-06-28 03:49:46,419] [66 mysql.connector INFO] package: mysql.connector.plugins
+[2023-06-28 03:49:46,419] [67 mysql.connector INFO] plugin_name: caching_sha2_password
+[2023-06-28 03:49:46,419] [71 mysql.connector INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+[2023-06-28 03:49:46,815] [29 root INFO] Found [('matches',), ('model_data',)] data tables on database
+[2023-06-28 03:49:50,724] [31 root INFO] Data loaded from database
+[2023-06-28 03:49:50,779] [33 root INFO] Matches loaded from database
+[2023-06-28 03:49:54,642] [12 root INFO] File saved <_io.BufferedWriter name='artifacts\\preprocessor.pkl'>
+[2023-06-28 03:49:54,642] [28 root INFO] Data transformer saved successfully
+[2023-06-28 03:49:54,713] [17 root INFO] Loaded the file <_io.BufferedReader name='artifacts\\preprocessor.pkl'>
+[2023-06-28 03:49:55,479] [47 root INFO] Data transformed and returned
