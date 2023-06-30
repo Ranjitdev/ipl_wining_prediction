@@ -1,7 +1,7 @@
 #
 # Package analogous to 'threading.py' but using processes
 #
-# multiprocessing/__init__.py
+# multiprocessing/data_ingesion.py
 #
 # This package is intended to duplicate the functionality (and much of
 # the API) of threading.py but uses processes instead of threads.  A

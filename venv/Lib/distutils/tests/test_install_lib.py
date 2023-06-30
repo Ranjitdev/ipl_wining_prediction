@@ -65,7 +65,7 @@ class InstallLibTestCase(support.TempdirManager,
         cmd.distribution.packages = ['spam']
         cmd.distribution.script_name = 'setup.py'
 
-        # get_outputs should return 4 elements: spam/__init__.py and .pyc,
+        # get_outputs should return 4 elements: spam/data_ingesion.py and .pyc,
         # foo.import-tag-abiflags.so / foo.pyd
         outputs = cmd.get_outputs()
         self.assertEqual(len(outputs), 4, outputs)
@@ -85,7 +85,7 @@ class InstallLibTestCase(support.TempdirManager,
         cmd.distribution.packages = ['spam']
         cmd.distribution.script_name = 'setup.py'
 
-        # get_inputs should return 2 elements: spam/__init__.py and
+        # get_inputs should return 2 elements: spam/data_ingesion.py and
         # foo.import-tag-abiflags.so / foo.pyd
         inputs = cmd.get_inputs()
         self.assertEqual(len(inputs), 2, inputs)

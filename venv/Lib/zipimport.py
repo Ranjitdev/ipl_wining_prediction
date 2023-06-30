@@ -205,7 +205,7 @@ class zipimporter:
 
         path = _get_module_path(self, fullname)
         if mi:
-            fullpath = _bootstrap_external._path_join(path, '__init__.py')
+            fullpath = _bootstrap_external._path_join(path, 'data_ingesion.py')
         else:
             fullpath = f'{path}.py'
 
@@ -298,7 +298,7 @@ class zipimporter:
 # '/' is replaced by path_sep there.
 _zip_searchorder = (
     (path_sep + '__init__.pyc', True, True),
-    (path_sep + '__init__.py', False, True),
+    (path_sep + 'data_ingesion.py', False, True),
     ('.pyc', True, False),
     ('.py', False, False),
 )
@@ -772,8 +772,8 @@ class _ZipImportResourceReader:
         fullname_path = Path(self.zipimporter.get_filename(self.fullname))
         relative_path = fullname_path.relative_to(self.zipimporter.archive)
         # Don't forget that fullname names a package, so its path will include
-        # __init__.py, which we want to ignore.
-        assert relative_path.name == '__init__.py'
+        # data_ingesion.py, which we want to ignore.
+        assert relative_path.name == 'data_ingesion.py'
         package_path = relative_path.parent
         subdirs_seen = set()
         for filename in self.zipimporter._files:

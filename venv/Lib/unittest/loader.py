@@ -249,7 +249,7 @@ class TestLoader(object):
         If the start directory is not the top level directory then the top
         level directory must be specified separately.
 
-        If a test package name (directory with '__init__.py') matches the
+        If a test package name (directory with 'data_ingesion.py') matches the
         pattern then the package will be checked for a 'load_tests' function. If
         this exists then it will be called with (loader, tests, pattern) unless
         the package has already had load_tests called from the same discovery
@@ -353,7 +353,7 @@ class TestLoader(object):
         module = sys.modules[module_name]
         full_path = os.path.abspath(module.__file__)
 
-        if os.path.basename(full_path).lower().startswith('__init__.py'):
+        if os.path.basename(full_path).lower().startswith('data_ingesion.py'):
             return os.path.dirname(os.path.dirname(full_path))
         else:
             # here we have been given a module rather than a package - so
@@ -418,7 +418,7 @@ class TestLoader(object):
     def _find_test_path(self, full_path, pattern, namespace=False):
         """Used by discovery.
 
-        Loads tests from a single file, or a directories' __init__.py when
+        Loads tests from a single file, or a directories' data_ingesion.py when
         passed the directory.
 
         Returns a tuple (None_or_tests_from_file, should_recurse).

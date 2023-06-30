@@ -5,4 +5,5 @@ dill
 streamlit
 sqlalchemy
 mysql-connector-python
+gunicorn
 -e .

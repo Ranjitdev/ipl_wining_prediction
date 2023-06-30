@@ -64,7 +64,7 @@ class SDistTestCase(BasePyPIRCCommandTestCase):
         os.mkdir(join(self.tmp_dir, 'dist'))
         # a package, and a README
         self.write_file((self.tmp_dir, 'README'), 'xxx')
-        self.write_file((self.tmp_dir, 'somecode', '__init__.py'), '#')
+        self.write_file((self.tmp_dir, 'somecode', 'data_ingesion.py'), '#')
         self.write_file((self.tmp_dir, 'setup.py'), SETUP_PY)
         os.chdir(self.tmp_dir)
 
@@ -129,7 +129,7 @@ class SDistTestCase(BasePyPIRCCommandTestCase):
 
         # making sure everything has been pruned correctly
         expected = ['', 'PKG-INFO', 'README', 'setup.py',
-                    'somecode/', 'somecode/__init__.py']
+                    'somecode/', 'somecode/data_ingesion.py']
         self.assertEqual(sorted(content), ['fake-1.0/' + x for x in expected])
 
     @unittest.skipUnless(ZLIB_SUPPORT, 'Need zlib support to run')
@@ -232,7 +232,7 @@ class SDistTestCase(BasePyPIRCCommandTestCase):
                     'data/', 'data/data.dt', 'inroot.txt',
                     'scripts/', 'scripts/script.py', 'setup.py',
                     'some/', 'some/file.txt', 'some/other_file.txt',
-                    'somecode/', 'somecode/__init__.py', 'somecode/doc.dat',
+                    'somecode/', 'somecode/data_ingesion.py', 'somecode/doc.dat',
                     'somecode/doc.txt']
         self.assertEqual(sorted(content), ['fake-1.0/' + x for x in expected])
 

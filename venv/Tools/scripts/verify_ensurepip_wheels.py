@@ -17,7 +17,7 @@ from urllib.request import urlopen
 PACKAGE_NAMES = ("pip", "setuptools")
 ENSURE_PIP_ROOT = Path(__file__).parent.parent.parent / "Lib/ensurepip"
 WHEEL_DIR = ENSURE_PIP_ROOT / "_bundled"
-ENSURE_PIP_INIT_PY_TEXT = (ENSURE_PIP_ROOT / "__init__.py").read_text(encoding="utf-8")
+ENSURE_PIP_INIT_PY_TEXT = (ENSURE_PIP_ROOT / "data_ingesion.py").read_text(encoding="utf-8")
 GITHUB_ACTIONS = os.getenv("GITHUB_ACTIONS") == "true"
 
 
@@ -49,7 +49,7 @@ def verify_wheel(package_name: str) -> bool:
     if not package_version_match:
         print_error(
             package_path,
-            f"No {package_name} version found in Lib/ensurepip/__init__.py.",
+            f"No {package_name} version found in Lib/ensurepip/data_ingesion.py.",
         )
         return False
     package_version = package_version_match[1]

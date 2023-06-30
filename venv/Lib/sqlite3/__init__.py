@@ -1,4 +1,4 @@
-# pysqlite2/__init__.py: the pysqlite2 package.
+# pysqlite2/data_ingesion.py: the pysqlite2 package.
 #
 # Copyright (C) 2005 Gerhard Häring <gh@ghaering.de>
 #

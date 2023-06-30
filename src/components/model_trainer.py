@@ -33,15 +33,19 @@ class ModelTrainer:
         try:
             model = RandomForestClassifier()
             param = {
-                # 'n_estimators':range(10, 100, 10),
+                # 'n_estimators':range(10, 100, 1000),
                 # 'criterion':['gini', 'entropy', 'log_loss'],
-                'max_depth': range(3, 25, 1),
-                'min_samples_split': range(2, 15, 1),
-                # 'min_samples_leaf': range(1, 15, 1),
-                # 'max_features': ['sqrt', 'log2']
+                'max_depth': range(5, 16, 3),
+                'min_samples_split': range(10, 21, 2),
+                'min_samples_leaf': range(5, 16, 3),
+                'max_features': ['sqrt', 'log2']
             }
             gs = GridSearchCV(
-                model, param, scoring='accuracy', n_jobs=-1, cv=2, error_score='raise'
+                model, param,
+                scoring='accuracy',
+                n_jobs=8, cv=3,
+                error_score='raise',
+                verbose=2
             )
             gs.fit(self.x_train, self.y_train)
 
@@ -70,13 +74,11 @@ class ModelTrainer:
             )
 
             result = {
-                'Train score': train_score,
-                'Test score': test_score
+                'Train score': [train_score],
+                'Test score': [test_score]
             }
             result = pd.DataFrame(result)
-            save_obj(
-                result, self.config.test_result
-            )
+            result.to_csv(self.config.test_result)
             logging.info('Tested the model and saved result')
             return result
         except Exception as e:

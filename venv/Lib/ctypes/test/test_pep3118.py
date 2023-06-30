@@ -127,7 +127,7 @@ s_float = "f"
 s_double = "d"
 s_longdouble = "g"
 
-# Alias definitions in ctypes/__init__.py
+# Alias definitions in ctypes/data_ingesion.py
 if c_int is c_long:
     s_int = s_long
 if c_uint is c_ulong:

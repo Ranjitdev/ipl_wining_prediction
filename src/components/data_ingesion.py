@@ -46,8 +46,8 @@ class DataInsgest:
             tables = self.config.tables
             data = self.config.db_data
             matches = self.config.db_matches
-            data.to_csv(self.config.local_data_file)
-            data.to_csv(self.config.local_matches_file)
+            # data.to_csv(self.config.local_data_file, index=False)
+            # matches.to_csv(self.config.local_matches_file, index=False)
             return data, matches, tables
         except Exception as e:
             raise CustomException(e, sys)

@@ -56,7 +56,7 @@ class BuildPyTestCase(support.TempdirManager,
         pkgdest = os.path.join(destination, "pkg")
         files = os.listdir(pkgdest)
         pycache_dir = os.path.join(pkgdest, "__pycache__")
-        self.assertIn("__init__.py", files)
+        self.assertIn("data_ingesion.py", files)
         self.assertIn("README.txt", files)
         if sys.dont_write_bytecode:
             self.assertFalse(os.path.exists(pycache_dir))

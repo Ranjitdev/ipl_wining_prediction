@@ -1,7 +1,7 @@
 #
 # Support for the API of the multiprocessing package using threads
 #
-# multiprocessing/dummy/__init__.py
+# multiprocessing/dummy/data_ingesion.py
 #
 # Copyright (c) 2006-2008, R Oudkerk
 # Licensed to PSF under a Contributor Agreement.

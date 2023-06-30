@@ -1,3 +1,8 @@
-import streamlit
+import streamlit as st
 
-streamlit.write('Hello This is IPL Winner prediction app')
+with st.form('submit form'):
+    st.write('form')
+
+    submit = st.form_submit_button('Submit')
+    if submit:
+        st.write('Submitted')

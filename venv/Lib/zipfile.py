@@ -1969,7 +1969,7 @@ class PyZipFile(ZipFile):
             return
         dir, name = os.path.split(pathname)
         if os.path.isdir(pathname):
-            initname = os.path.join(pathname, "__init__.py")
+            initname = os.path.join(pathname, "data_ingesion.py")
             if os.path.isfile(initname):
                 # This is a package directory, add it
                 if basename:
@@ -1983,13 +1983,13 @@ class PyZipFile(ZipFile):
                     print("Adding", arcname)
                 self.write(fname, arcname)
                 dirlist = sorted(os.listdir(pathname))
-                dirlist.remove("__init__.py")
+                dirlist.remove("data_ingesion.py")
                 # Add all *.py files and package subdirectories
                 for filename in dirlist:
                     path = os.path.join(pathname, filename)
                     root, ext = os.path.splitext(filename)
                     if os.path.isdir(path):
-                        if os.path.isfile(os.path.join(path, "__init__.py")):
+                        if os.path.isfile(os.path.join(path, "data_ingesion.py")):
                             # This is a package directory, add it
                             self.writepy(path, basename,
                                          filterfunc=filterfunc)  # Recursive call

@@ -24,7 +24,7 @@ class AuthenticationError(ProcessError):
     pass
 
 #
-# Base type for contexts. Bound methods of an instance of this type are included in __all__ of __init__.py
+# Base type for contexts. Bound methods of an instance of this type are included in __all__ of data_ingesion.py
 #
 
 class BaseContext(object):

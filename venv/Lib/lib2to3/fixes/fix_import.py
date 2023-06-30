@@ -89,7 +89,7 @@ class FixImport(fixer_base.BaseFix):
         imp_name = imp_name.split(".", 1)[0]
         base_path = dirname(self.filename)
         base_path = join(base_path, imp_name)
-        # If there is no __init__.py next to the file its not in a package
+        # If there is no data_ingesion.py next to the file its not in a package
         # so can't be a relative import.
         if not exists(join(dirname(base_path), "__init__.py")):
             return False

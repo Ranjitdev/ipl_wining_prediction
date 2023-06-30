@@ -3,7 +3,7 @@ import unittest
 from test import support
 
 ################################################################
-# This section should be moved into ctypes\__init__.py, when it's ready.
+# This section should be moved into ctypes\data_ingesion.py, when it's ready.
 
 from _ctypes import PyObj_FromPtr
 

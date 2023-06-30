@@ -4,4 +4,5 @@ scikit-learn
 dill
 streamlit
 sqlalchemy
-mysqlclient
+mysql-connector-python
+gunicorn

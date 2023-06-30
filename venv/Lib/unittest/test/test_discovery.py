@@ -307,7 +307,7 @@ class TestDiscovery(unittest.TestCase):
         # and the plain module result nested by the package module load_tests
         # indicating that it was processed and could have been mutated.
         vfs = {abspath('/foo'): ['my_package'],
-               abspath('/foo/my_package'): ['__init__.py', 'test_module.py']}
+               abspath('/foo/my_package'): ['data_ingesion.py', 'test_module.py']}
         def list_dir(path):
             return list(vfs[path])
         os.listdir = list_dir
@@ -329,7 +329,7 @@ class TestDiscovery(unittest.TestCase):
                     def load_tests(loader, tests, pattern):
                         self.load_tests_args.append((loader, tests, pattern))
                         # top level directory cached on loader instance
-                        __file__ = '/foo/my_package/__init__.py'
+                        __file__ = '/foo/my_package/data_ingesion.py'
                         this_dir = os.path.dirname(__file__)
                         pkg_tests = loader.discover(
                             start_dir=this_dir, pattern=pattern)
@@ -420,7 +420,7 @@ class TestDiscovery(unittest.TestCase):
         # as per _find_tests' normal behaviour.
         # We expect to see our load_tests hook called once.
         vfs = {abspath('/toplevel'): ['startdir'],
-               abspath('/toplevel/startdir'): ['__init__.py']}
+               abspath('/toplevel/startdir'): ['data_ingesion.py']}
         def list_dir(path):
             return list(vfs[path])
         self.addCleanup(setattr, os, 'listdir', os.listdir)
@@ -500,7 +500,7 @@ class TestDiscovery(unittest.TestCase):
 
     def test_discover_with_init_modules_that_fail_to_import(self):
         vfs = {abspath('/foo'): ['my_package'],
-               abspath('/foo/my_package'): ['__init__.py', 'test_module.py']}
+               abspath('/foo/my_package'): ['data_ingesion.py', 'test_module.py']}
         self.setup_import_issue_package_tests(vfs)
         import_calls = []
         def _get_module_from_name(name):
@@ -556,7 +556,7 @@ class TestDiscovery(unittest.TestCase):
             raise unittest.SkipTest("Suite cleanup is disabled")
 
         vfs = {abspath('/foo'): ['my_package'],
-               abspath('/foo/my_package'): ['__init__.py', 'test_module.py']}
+               abspath('/foo/my_package'): ['data_ingesion.py', 'test_module.py']}
         self.setup_import_issue_package_tests(vfs)
         import_calls = []
         def _get_module_from_name(name):
