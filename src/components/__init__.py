@@ -21,7 +21,6 @@ class InitiateComponents:
         result = ModelTrainer(x_train, x_test, y_train, y_test).test_model()
         return result, params
 
-
 if __name__ == '__main__':
     data, matches, tables = InitiateComponents().get_data()
     x_train, x_test, y_train, y_test = InitiateComponents(

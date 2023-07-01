@@ -1,0 +1,14 @@
+[2023-07-01 18:43:28,096] [66 mysql.connector INFO] package: mysql.connector.plugins
+[2023-07-01 18:43:28,097] [67 mysql.connector INFO] plugin_name: caching_sha2_password
+[2023-07-01 18:43:28,099] [71 mysql.connector INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+[2023-07-01 18:43:28,402] [29 root INFO] Found [('matches',), ('model_data',)] data tables on database
+[2023-07-01 18:43:31,800] [31 root INFO] Data loaded from database
+[2023-07-01 18:43:31,842] [33 root INFO] Matches loaded from database
+[2023-07-01 18:43:34,182] [13 root INFO] File saved <_io.BufferedWriter name='artifacts\\preprocessor.pkl'>
+[2023-07-01 18:43:34,182] [28 root INFO] Data transformer saved successfully
+[2023-07-01 18:43:34,246] [18 root INFO] Loaded the file <_io.BufferedReader name='artifacts\\preprocessor.pkl'>
+[2023-07-01 18:43:34,949] [47 root INFO] Data transformed and returned
+[2023-07-01 18:44:06,803] [13 root INFO] File saved <_io.BufferedWriter name='artifacts\\model.pkl'>
+[2023-07-01 18:44:06,803] [54 root INFO] Model saved successfully with params {'C': 100, 'penalty': 'l2', 'solver': 'liblinear'}
+[2023-07-01 18:44:06,818] [18 root INFO] Loaded the file <_io.BufferedReader name='artifacts\\model.pkl'>
+[2023-07-01 18:44:06,843] [79 root INFO] Tested the model and saved result

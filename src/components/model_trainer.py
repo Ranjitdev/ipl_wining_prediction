@@ -31,19 +31,16 @@ class ModelTrainer:
 
     def save_train_model(self):
         try:
-            model = RandomForestClassifier()
+            model = LogisticRegression()
             param = {
-                # 'n_estimators':range(10, 100, 1000),
-                # 'criterion':['gini', 'entropy', 'log_loss'],
-                'max_depth': range(5, 16, 3),
-                'min_samples_split': range(10, 21, 2),
-                'min_samples_leaf': range(5, 16, 3),
-                'max_features': ['sqrt', 'log2']
+                'penalty': ['l2'],
+                'solver': ['liblinear', 'newton-cholesky'],
+                'C': [100, 200, 400, 600, 800, 1000]
             }
             gs = GridSearchCV(
                 model, param,
                 scoring='accuracy',
-                n_jobs=8, cv=3,
+                n_jobs=8, cv=5,
                 error_score='raise',
                 verbose=2
             )

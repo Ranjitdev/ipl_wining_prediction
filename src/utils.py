@@ -18,7 +18,3 @@ def load_obj(file):
         logging.info(f'Loaded the file {file}')
         return dill.load(file)
 
-def get_data():
-    data, matches, tables = DataInsgest().initiate_ingesion()
-    teams = list(data['Batting'].unique())
-    venues = list(data['Venue'].unique())
