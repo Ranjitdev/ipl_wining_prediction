@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18904266-c9b6-4798-b1c7-063411feae8b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artifacts/data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/artifacts/matches.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/artifacts/model.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/artifacts/preprocessor.pkl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/artifacts/test_result.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipl_data/.ipynb_checkpoints/data_cleaning-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ipl_data/.ipynb_checkpoints/data_cleaning-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipl_data/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ipl_data/data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipl_data/data_cleaning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ipl_data/data_cleaning.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipl_data/model_training.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ipl_data/model_training.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ipl_data/train_test.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ipl_data/train_test.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Thu 29-Jun-2023 20-46-38/Thu 29-Jun-2023 20-46-38.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Wed 28-Jun-2023 18-44-18/Wed 28-Jun-2023 18-44-18.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/model_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model_trainer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pipeline/transformation_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pipeline/transformation_pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.py" afterDir="false" />
-    </list>
+    <list default="true" id="18904266-c9b6-4798-b1c7-063411feae8b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
