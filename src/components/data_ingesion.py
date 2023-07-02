@@ -26,11 +26,8 @@ con = engine.connect()
 class DataIngesionConfig:
     cursor.execute('show tables')
     tables = cursor.fetchall()
-    logging.info(f'Found {tables} data tables on database')
     db_data = pd.read_sql('model_data', con, index_col=None)
-    logging.info('Data loaded from database')
     db_matches = pd.read_sql('matches', con, index_col=None)
-    logging.info('Matches loaded from database')
     data_folder = os.path.join('artifacts')
     local_data_file = os.path.join('artifacts', 'data.csv')
     local_matches_file = os.path.join('artifacts', 'matches.csv')
@@ -46,8 +43,8 @@ class DataInsgest:
             tables = self.config.tables
             data = self.config.db_data
             matches = self.config.db_matches
-            # data.to_csv(self.config.local_data_file, index=False)
-            # matches.to_csv(self.config.local_matches_file, index=False)
+            data.to_csv(self.config.local_data_file, index=False)
+            matches.to_csv(self.config.local_matches_file, index=False)
             return data, matches, tables
         except Exception as e:
             raise CustomException(e, sys)

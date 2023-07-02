@@ -24,6 +24,7 @@ class DataTransformation:
             x = data.drop('Result', axis=1)
             y = data.iloc[:, -1]
             transform_obj.fit(x)
+            logging.info('Trained data transformer')
             save_obj(transform_obj, self.config.preprocessor)
             logging.info('Data transformer saved successfully')
             return x, y
@@ -44,7 +45,7 @@ class DataTransformation:
             test_array = transform_data.transform(
                 x_test
             )
-            logging.info('Data transformed and returned')
+            logging.info('Transformed data with transformer engine')
             return train_array, test_array, y_train, y_test
         except Exception as e:
             raise CustomException(e, sys)

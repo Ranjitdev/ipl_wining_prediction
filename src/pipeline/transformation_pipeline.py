@@ -48,7 +48,7 @@ class DataTransformationPipe:
             preprocessor = load_obj(self.config.preprocessor)
             model = load_obj(self.config.model)
             test_array = preprocessor.transform(df)
-            predicted = np.round(model.predict_proba(test_array)*100, 2)
+            predicted = np.round(model.predict_proba(test_array)*100)
             return predicted
         except Exception as e:
             raise CustomException(e, sys)

@@ -1,0 +1,12 @@
+[2023-07-01 21:38:27,958] [66 mysql.connector INFO] package: mysql.connector.plugins
+[2023-07-01 21:38:27,958] [67 mysql.connector INFO] plugin_name: caching_sha2_password
+[2023-07-01 21:38:27,958] [71 mysql.connector INFO] AUTHENTICATION_PLUGIN_CLASS: MySQLCachingSHA2PasswordAuthPlugin
+[2023-07-01 21:38:34,416] [27 root INFO] Trained data transformer
+[2023-07-01 21:38:34,416] [13 root INFO] File saved <_io.BufferedWriter name='artifacts\\preprocessor.pkl'>
+[2023-07-01 21:38:34,416] [29 root INFO] Data transformer saved successfully
+[2023-07-01 21:38:34,466] [18 root INFO] Loaded the file <_io.BufferedReader name='artifacts\\preprocessor.pkl'>
+[2023-07-01 21:38:35,170] [48 root INFO] Transformed data with transformer engine
+[2023-07-01 22:31:37,287] [13 root INFO] File saved <_io.BufferedWriter name='artifacts\\model.pkl'>
+[2023-07-01 22:31:37,340] [56 root INFO] RandomForestClassifier(max_depth=14, min_samples_leaf=3, min_samples_split=8) saved successfully with params {'max_depth': 14, 'max_features': 'sqrt', 'min_samples_leaf': 3, 'min_samples_split': 8}
+[2023-07-01 22:31:37,348] [18 root INFO] Loaded the file <_io.BufferedReader name='artifacts\\model.pkl'>
+[2023-07-01 22:31:39,360] [82 root INFO] Model tested Train score 95.02, Test score 94.63

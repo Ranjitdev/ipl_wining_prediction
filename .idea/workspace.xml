@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18904266-c9b6-4798-b1c7-063411feae8b" name="Changes" comment="" />
+    <list default="true" id="18904266-c9b6-4798-b1c7-063411feae8b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/model.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/preprocessor.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artifacts/test_result.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ipl_data/data_cleaning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ipl_data/data_cleaning.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Sat 01-Jul-2023 18-43-27/Sat 01-Jul-2023 18-43-27.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Sat 01-Jul-2023 18-44-32/Sat 01-Jul-2023 18-44-32.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/data_ingesion.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/data_ingesion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/data_transformation.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/data_transformation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/model_trainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/model_trainer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pipeline/transformation_pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/pipeline/transformation_pipeline.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

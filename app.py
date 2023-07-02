@@ -25,8 +25,8 @@ with st.form('submit form'):
             runs_left = total_run - score
             balls_left = 120 - (overs*6)
             wicket_left = 10 - wicket
-            crr = wicket*overs
-            rrr = (runs_left*6)/balls_left
+            crr = score/overs
+            rrr = runs_left/(balls_left*6)
             input_data = {
                 'Batting': [batting_team],
                 'Bowling': [bowling_team],
@@ -39,7 +39,7 @@ with st.form('submit form'):
                 'rrr': [rrr]
             }
             predicted = DataTransformationPipe().predict_result(input_data)
-            st.write(batting_team, predicted[0][0])
-            st.write(bowling_team, predicted[0][1])
+            st.header(batting_team + ' ' + str(predicted[0][0]) + '%')
+            st.header(bowling_team + ' ' + str(predicted[0][1]) + '%')
 
 

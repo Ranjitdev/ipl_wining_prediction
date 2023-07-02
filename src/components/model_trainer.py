@@ -6,19 +6,18 @@ from src.utils import save_obj, load_obj
 import os
 import sys
 from dataclasses import dataclass
-import warnings
-warnings.simplefilter('ignore')
 
 from sklearn.model_selection import GridSearchCV
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
+import warnings
+warnings.simplefilter('ignore')
 
 
 @dataclass
 class ModelTrainerConfiguration:
     model = os.path.join('artifacts', 'model.pkl')
-    test_result = os.path.join('artifacts', 'test_result.csv')
 
 
 class ModelTrainer:
@@ -31,11 +30,14 @@ class ModelTrainer:
 
     def save_train_model(self):
         try:
-            model = LogisticRegression()
+            model = RandomForestClassifier()
             param = {
-                'penalty': ['l2'],
-                'solver': ['liblinear', 'newton-cholesky'],
-                'C': [100, 200, 400, 600, 800, 1000]
+                # 'n_estimators': range(10, 100, 10),
+                # 'criterion': ['gini', 'entropy', 'log_loss'],
+                'max_depth': range(5, 15, 3),
+                'min_samples_split': [6, 8, 10, 12],
+                'min_samples_leaf': range(3, 10, 2),
+                'max_features': ['sqrt', 'log2']
             }
             gs = GridSearchCV(
                 model, param,
@@ -51,7 +53,9 @@ class ModelTrainer:
             save_obj(
                 model, self.config.model
             )
-            logging.info(f'Model saved successfully with params {gs.best_params_}')
+            logging.info(
+                f'{str(model)} saved successfully with params {gs.best_params_}'
+            )
             return gs.best_params_
         except Exception as e:
             raise CustomException(e, sys)
@@ -75,8 +79,9 @@ class ModelTrainer:
                 'Test score': [test_score]
             }
             result = pd.DataFrame(result)
-            result.to_csv(self.config.test_result)
-            logging.info('Tested the model and saved result')
+            logging.info(
+                f'Model tested Train score {train_score}, Test score {test_score}'
+            )
             return result
         except Exception as e:
             raise CustomException(e, sys)
