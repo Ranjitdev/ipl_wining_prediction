@@ -26,7 +26,7 @@ with st.form('submit form'):
             balls_left = 120 - (overs*6)
             wicket_left = 10 - wicket
             crr = score/overs
-            rrr = runs_left/(balls_left*6)
+            rrr = (runs_left*6)/balls_left
             input_data = {
                 'Batting': [batting_team],
                 'Bowling': [bowling_team],
