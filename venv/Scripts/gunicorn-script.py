@@ -1,4 +1,4 @@
-#!C:\Users\PythonFiles\PYcharm\ipl_prediction\venv\python.exe
+#!c:\Users\PythonFiles\VisualCode\ipl_prediction\venv\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'gunicorn==20.1.0','console_scripts','gunicorn'
 import re
 import sys

@@ -1,4 +1,4 @@
-#!C:\Users\PythonFiles\PYcharm\ipl_prediction\venv\python.exe
+#!c:\Users\PythonFiles\VisualCode\ipl_prediction\venv\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'Pygments==2.15.1','console_scripts','pygmentize'
 import re
 import sys

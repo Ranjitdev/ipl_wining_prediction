@@ -1,7 +1,0 @@
-README.md
-setup.py
-IPL_win_chance_prediction.egg-info/PKG-INFO
-IPL_win_chance_prediction.egg-info/SOURCES.txt
-IPL_win_chance_prediction.egg-info/dependency_links.txt
-IPL_win_chance_prediction.egg-info/requires.txt
-IPL_win_chance_prediction.egg-info/top_level.txt

@@ -1,8 +1,0 @@
-pandas
-numpy
-scikit-learn
-dill
-streamlit
-sqlalchemy
-mysql-connector-python
-gunicorn

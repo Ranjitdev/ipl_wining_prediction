@@ -1,4 +1,4 @@
-#!C:\Users\PythonFiles\PYcharm\ipl_prediction\venv\python.exe
+#!c:\Users\PythonFiles\VisualCode\ipl_prediction\venv\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'charset-normalizer==3.1.0','console_scripts','normalizer'
 import re
 import sys

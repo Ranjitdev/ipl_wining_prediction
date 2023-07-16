@@ -1,4 +1,4 @@
-#!C:\Users\PythonFiles\PYcharm\ipl_prediction\venv\python.exe
+#!c:\Users\PythonFiles\VisualCode\ipl_prediction\venv\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'jsonschema==4.17.3','console_scripts','jsonschema'
 import re
 import sys
